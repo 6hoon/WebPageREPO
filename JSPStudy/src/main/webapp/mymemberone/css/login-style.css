@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+div.con {
+	margin: 0 auto;
+	width: 300px;
+}
+
+div.login {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+input.loginLogo {
+	background-color: rgb(249, 93, 3);
+	border-radius: 2px;
+	border: 1px solid grey;
+	margin: 0 4px;
+}
+
+input.loginLogo:hover {
+	background-color: greenyellow;
+	color: rgb(249, 93, 3);
+}
+
+div.loginBot {
+	text-align: center;
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+button {
+	color: black;
+}

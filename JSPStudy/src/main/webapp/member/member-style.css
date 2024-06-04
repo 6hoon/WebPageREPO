@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+form {
+	width: 95%;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+table {
+	width: 100%;
+	border: 1px solid whi;
+	border-collapse: collapse;
+}
+
+tr, td {
+	border-top: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+}
+
+td.title {
+	font-size: 0.8em;
+	background-color: #f4f4f4;
+	width: 110px;
+	border-left: 1px solid white;
+	text-align: center;
+}
+
+td.content {
+	padding: 5px;
+	font-size: 0.8em;
+}
+
+td.ratio {
+	display: flex;
+	border-top: 0;
+	border-bottom: 0;
+	align-items: center;
+	font-size: 0.7em;
+}
+
+td>span {
+	font-size: 0.8em;
+}
+
+input {
+	border: 1px solid lightgray;
+	margin: 5px;
+	height: 20px;
+	border-radius: 2px;
+	background-color: #f4f4f4;
+}
+
+input.request {
+	background-image: url(./image.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+div.private {
+	display: flex;
+	align-items: center;
+	font-size: 0.7em;
+}
+
+div.last {
+	width: 150px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+button.createAccount {
+	background-color: rgb(238, 14, 156);
+	color: white;
+	padding: 10px;
+	border: 0;
+	border-radius: 2px;
+}
+
+button.cancel {
+	padding: 10px;
+	border: 1px solid gray;
+	background-color: lightgray;
+	color: gray;
+	border-radius: 2px;
+}
+
+button.createAccount:hover {
+	background-color: green;
+	color: white;
+}
+
+button.cancel:hover {
+	background-color: red;
+	color: black;
+}
+
+

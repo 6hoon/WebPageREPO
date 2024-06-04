@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<link rel="stylesheet" href="./member-style.css" />
+</head>
+<body>
+	<h1>회 원 가 입</h1>
+	<form action="/JSPStudy/MemberCreate" method="post">
+		<h4>사이트 이용정보 입력</h4>
+		<table>
+			<tr>
+				<td class="title"><label for="memberId"><b>아이디</b></label></td>
+				<td class="content"><input class="request" type="text"
+					name="id" id="id" size="25" minlength="3" maxlength="12" required
+					placeholder="ID입력" /></td>
+			</tr>
+			<tr>
+				<td class="title"><label for="memberPw"><b>비밀번호</b></label></td>
+				<td class="content"><input class="request" type="password"
+					name="pw" id="pw" size="25" minlength="6" maxlength="12" required
+					placeholder="PW입력" /></td>
+			</tr>
+			<tr>
+				<td class="title"><label for="checkPw"><b>비밀번호 확인</b></label></td>
+				<td class="content"><input name="pwcheck" id="pwcheck"
+					class="request" type="password" size="25" minlength="6"
+					maxlength="12" required placeholder="PW확인" /></td>
+			</tr>
+		</table>
+
+		<h4>개인정보 입력</h4>
+		<table>
+			<tr>
+				<td class="title"><label for="userName"><b>이름</b></label></td>
+				<td class="content"><input type="text" class="request"
+					size="25" minlength="2" maxlength="5" required name="name"
+					id="name" /></td>
+			</tr>
+			<tr>
+				<td class="title"><label for="userNick"><b>닉네임</b></label></td>
+				<td class="content"><input type="text" class="request"
+					size="25" minlength="2" maxlength="6" required name="nick"
+					id="nick" /></td>
+			</tr>
+			<tr>
+				<td class="title"><label for="userEmail"><b>E-mail</b></label>
+				</td>
+				<td class="content"><input type="text" class="request"
+					size="50" minlength="10" maxlength="25" required name="email"
+					id="email" /></td>
+			</tr>
+
+			<tr>
+				<td class="title"><label for="userPhone"><b>휴대폰번호</b></label></td>
+				<td class="content"><input type="text" class="request"
+					size="25" minlength="10" maxlength="20" required name="phone"
+					id="phone" /></td>
+			</tr>
+
+		</table>
+
+		<div class="last">
+			<button type="submit" class="createAccount">
+				<b>회원가입</b>
+			</button>
+			<button class="cancel">
+				<a style="text-decoration: none; color: black; font-weight: 900;"
+					href="http://localhost:8080/JSPStudy/MemberMain">취소</a>
+			</button>
+		</div>
+	</form>
+</body>
+</html>
